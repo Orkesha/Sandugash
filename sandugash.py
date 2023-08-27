@@ -25,7 +25,7 @@ def plays():
     time.sleep(1)
 
 # Устанавливаем ваш API-ключ
-openai.api_key = "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"
+openai.api_key = "ТОКЕН ОТ CHATGPT"   #platform.openai.com
 def gpttext(text):
  completion = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -38,7 +38,7 @@ def gpttext(text):
  return otv
 
 
-headers = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZmJmNGQ2ODYtN2QxNS00ZjcyLTgxMjItNTIxYmNkMDVkN2Y0IiwidHlwZSI6ImFwaV90b2tlbiJ9.VxeaT4SWiqijBwkO3G9i7fb2J6lminbXHLN3ew_NYT8"}
+headers = {"Authorization": "Bearer ТОКЕН ОТ EDENAI"}  #edenai.co
 def tts(text):
  url ="https://api.edenai.run/v2/audio/text_to_speech"
  payload={"providers": "microsoft", "language": "kk-KZ", "option":"FEMALE", "text": text}
